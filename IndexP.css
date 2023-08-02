@@ -1,0 +1,629 @@
+/* Reset default styles and apply global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #252525;
+}
+
+body {
+    text-align: center;
+}
+
+.inverse {
+    background-color: #252525;
+    color: #fffdff;
+}
+.btn {
+    background-color: #ffe4a9;
+    color: #131313;
+    border: none;
+    border-radius: 6%;
+    text-decoration: none;
+    margin: 1em;
+    width: 200px;
+}
+.btn:hover,
+.btn:active {
+    cursor: pointer;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffe4a9;
+    opacity: 97%;
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: .9em;
+}
+
+nav li {
+    margin-left: 1.4em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #252525;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+/* Updated CSS for Header */
+header {
+    padding: 4em 0;
+    background-image: url("./images/sunCv.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+
+.container {
+    width: 80%;
+    margin: 2em 2em 3em;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 2.2em;
+    font-weight: 300;
+    margin-bottom: .8em;
+}   
+.title-name {
+    color: #ffe4a9;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.title-container {
+    line-height: 1.8em;
+    text-align: left;
+    padding-right: 6em;
+}
+.title-container>h3 {
+    margin-bottom: 1.5em;
+}
+
+
+
+/* About Me */
+.about-me {
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    padding: 4em 5em;
+}
+.about-me img {
+    height: 450px;
+    border-radius: 35%;
+    margin-left: 3em;
+    position: relative; 
+    z-index: 1; 
+}
+.container-about-me {
+    padding: 0 5.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.8em;
+}
+
+.about-me a {
+    margin: 2em 0 1em;
+}
+.shape {
+    position: absolute;
+    top: 50%; 
+    left: 5em; 
+    background-color: #252525;
+    border-radius: 35% 65% 65% 35% / 37% ;
+    width: 350px;
+    height: 460px; 
+    transform: translateY(-50%);
+    z-index: 0; 
+}
+  
+
+/* Skills */
+.skills {
+    padding: 3em 2.3em;
+}
+.container-skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 7em 1em ;
+
+}
+.box-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-icon i,
+.box-icon img {
+    height: 47px;
+    width: 47px;
+    margin-bottom: .2em;
+    border-radius: 50%;
+}
+.box-icon img {
+    margin-bottom: 1.4em;
+    margin-top: -1em;
+}
+
+/* Projects */
+.projects {
+    padding: 4em 5.4em 3em;
+}
+
+.projects-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 3em;
+    line-height: 1.5em;
+}
+.projects-description-divider {
+    width: 70%;
+}
+.projects-description-divider h3 {
+    padding-bottom: .5em;
+}
+.projects-description-divider a {
+    padding: .2em .6em;
+    margin: 0;
+}
+.container-projects {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em;
+}
+.project-img {
+    max-width: 30%;
+    height: auto;
+}
+
+/* Contact */
+.container-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3.8em 0;
+}
+.contact-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding-left: 5em;
+    padding-right: 2em;
+}
+.contact-icons {
+    margin-top: 1.5em;
+}
+.contact-icons a:last-child {
+    margin-left: 2em;
+}
+.contact-description h2,
+.contact-description p {
+    text-align: left;
+}
+.email {
+    color: #ffe4a9;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.contact-form {
+    width: 40%;
+    margin-right: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-input {
+    width: 100%;
+    padding: 1.1em;
+    margin-bottom: 2em;
+    border: 1px solid #ffe4a9;
+    border-radius: 5px;
+    font-size: .8em;
+}
+.contact-input:focus {
+    outline: none;
+    border: solid 3px #ffe4a9;
+}
+.contact-msg {
+    height: 200px;
+    font-size: .9em;
+}
+.submit-container {
+    text-align: left; 
+}
+.send-btn {
+    padding: .8em 2.2em;
+    border-radius: 5px;
+}
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #ffe4a9;
+    color: #252525;
+    padding: 1.2em;
+    font-size: .9em;
+    line-height: 2em;
+}
+
+/* Media Queries */
+@media (max-width: 440px) {
+    body {
+        font-size: 0.7em;
+        line-height: 1.2em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    .inverse {
+        width: 40em;
+    }
+    nav li {
+        margin-left: 1em;
+    }
+    .title-name {
+        font-size: 1.2em;
+    }
+    header {
+        background-size: 80%;
+        padding-bottom: 1em;
+    }
+    .container {
+        padding: 3em 0 0;
+    }
+    .about-me {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 40em;
+    }
+    .about-me img {
+        height: 270px;
+        width: 190px;
+        margin: 0 9em 2em;
+    }
+    .shape {
+        height: 270px;
+        width: 180px;
+        top: 25%;
+        left: 10em;
+    }
+    .container-about-me {
+        padding: 0 0.4em 1em;
+        line-height: 1.3em;
+    }
+    .container-skills {
+        padding: 5em 0.7em 1em;
+    }
+    .container-skills p {
+        font-size: 0.6em;
+    }
+    .box-icon i {
+        margin-bottom: -1em;
+    }
+    .box-icon img {
+        width: 29px;
+        height: 29px;
+        margin-bottom: 0.48em;
+        margin-top: -1em;
+    }
+    .projects {
+        width: 40em;
+        padding: 4em 2.5em 3em;
+    }
+    .projects-description-divider {
+        width: 100%;
+        margin-right: 1.2em;
+        margin-top: -6px;
+    }
+    .projects-description-divider a {
+        margin-top: 5px;
+    }
+    .container-projects {
+        margin: 1.8em;
+    }
+    .contact-description {
+        padding-left: 3.5em;
+    }
+    .contact-msg {
+        height: 100px;
+        font-size: 0.9em;
+    }
+    .contact-form {
+        margin-right: 3.5em;
+    }
+    .send-btn {
+        margin-left: 0px;
+        margin-top: 0;
+        padding: 0.5em 0em;
+        width: 100px;
+        font-size: 0.8em;
+    }
+    footer {
+        font-size: 0.7em;
+        width: 57.2em;
+    }
+}
+
+@media (min-width:440px) and (max-width: 660px) {
+    
+    body {
+        font-size: .7em;
+        line-height: 1.2em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    .inverse {
+        width: 40em;
+    }
+    nav li {
+        margin-left: 1em;
+    }    
+    .title-name {
+        font-size: 1.2em;
+    }
+    header {
+        background-size: 80%;
+        padding-bottom: 1em;
+    }
+    .container {
+        padding: 3em 0 0;
+    }
+   
+    .about-me {
+        position: relative; 
+        display: flex;
+        flex-direction: column;
+        width: 40em;
+    }
+    .about-me img {
+        height: 270px;
+        width: 190px;
+        margin:0 9em 2em;
+    }
+    .shape {
+        height: 270px;
+        width: 180px;
+        top: 25%;
+        left: 10em;
+    }
+    .container-about-me {
+        padding: 0 .4em 1em ;
+        line-height: 1.3em;
+    }
+
+    .container-skills {
+        padding: 5em .7em 1em;
+    }
+    .container-skills p {
+        font-size: .6em;
+    }
+    .box-icon i {
+        margin-bottom: -1em;
+    }
+    .box-icon img {
+        width: 29px;
+        height: 29px;
+        margin-bottom: .48em;
+        margin-top: -1em;
+    }
+
+    .projects {
+        width: 40em;
+        padding: 4em 2.5em 3em;
+    }
+    .projects-description-divider {
+        width: 100%;
+        margin-right: 1.2em;
+        margin-top: -6px;
+    }
+    .projects-description-divider a {
+        margin-top: 5px;
+    }
+    .container-projects {
+        margin: 1.8em;
+    }
+
+    .contact-description {
+        padding-left: 3.5em;
+    }
+    .contact-msg {
+        height: 100px;
+        font-size: .9em;
+    }
+    .contact-form {
+        margin-right: 3.5em;
+    }
+    .send-btn {
+        margin-left: 0px;
+        margin-top: 0;
+        padding: .5em 0em;
+        width: 100px;
+        font-size: .8em;
+    }
+
+    footer {
+        font-size: .7em;
+        width: 57.2em;
+    }
+}
+ 
+
+@media (min-width:660px) and (max-width: 881px) {
+   body {
+        font-size: .75em;
+   }
+   .title-name {
+        font-size: 1.5em;
+   }
+   header {
+        background-size: 85%;
+        padding-bottom: 1em;
+   }
+   .container {
+        padding: 3em 1em 0;
+   }
+
+   .about-me img {
+        height: 270px;
+        margin-left: 1.5em;
+        margin-top: 1.7em;
+   }
+   .shape {
+        height: 270px;
+        width: 180px;
+        top: 44%;
+        left: 3.3em;
+   }
+   .container-about-me {
+        padding: 0 0 1em 2em;
+        line-height: 1.5em;
+   }
+
+   .container-skills {
+        padding: 5em 4em 1em;
+   }
+   .container-skills p {
+        font-size: .8em;
+   }
+   .box-icon i {
+        margin-bottom: -.4em;
+   }
+   .box-icon img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: .7em;
+        margin-top: -1em;
+   }
+
+   .projects-description-divider {
+        width: 87%;
+        margin-right: 1.2em;
+        margin-top: -6px;
+   }
+   .projects-description-divider a {
+        margin-top: 5px;
+   }
+   .container-projects {
+        margin: 1.8em;
+   }
+
+   .contact-description {
+        padding-left: 3.5em;
+   }
+   .contact-form {
+        margin-right: 3.5em;
+   }
+   .send-btn {
+        margin-left: 0px;
+        padding: .8em 0em;
+   }
+
+   footer {
+        font-size: .7em;
+   }
+}
+
+@media (min-width:881px) and (max-width: 1097px) {
+    body {
+        font-size: .9em;
+    }
+    .title-name {
+        font-size: 1.8em;
+    }
+    header {
+        background-size: 85%;
+        line-height: 1.5;
+    }
+
+    .about-me img {
+        height: 350px;
+    }
+    .shape {
+        height: 350px;
+        width: 250px;
+        top: 40%;
+    }
+    .container-about-me {
+        padding: 0 2.8em;
+        line-height: 1.5em;
+    }
+
+    .container-skills {
+        padding: 5em 4em 1em;
+    }
+    .container-skills p {
+        font-size: .8em;
+    }
+    .box-icon i {
+        margin-bottom: -.4em;
+    }
+    .box-icon img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: .7em;
+        margin-top: -1em;
+    }
+
+    .projects-description-divider {
+        width: 87%;
+        margin-right: 1.5em;
+        margin-top: -2.2em;
+    }
+    .container-projects {
+        margin: 1.8em;
+    }
+
+    .contact-description {
+        padding-left: 3.5em;
+    }
+    .contact-form {
+        margin-right: 3.5em;
+    }
+    .send-btn {
+        margin-left: 0px;
+    }
+
+    footer {
+        font-size: .7em;
+    }
+}
+ 
