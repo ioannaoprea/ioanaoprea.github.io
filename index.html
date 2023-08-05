@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <title>Portofolio</title>
-        <link rel="stylesheet" href="IndexP.css">
+        <link rel="stylesheet" href="index.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,7 +79,7 @@
                         <p>GITHUB</p>
                     </div>
                     <div class="box-icon">
-                        <img src="./images/vscode.png" alt="visual studio code logo">
+                        <img src="./images/vs_code.png" alt="visual studio code logo">
                         <p>VS Code</p>
                     </div>
                     <div class="box-icon">
@@ -127,12 +127,12 @@
                     </div>
 
                     <div class="contact-form">
-                        <form id="contact-form" action="mailto:oprea.ioanna@gmail.com" method="get">
+                        <form id="contact-form" onsubmit="sendEmail(event)" method="get">
                           <label for="name" class="hidden">Name</label>
-                          <input class="contact-input" type="text" name="name" id="name" placeholder="name" autocomplete="off" required="">
+                          <input class="contact-input" type="text" name="name" id="fromName" placeholder="name" autocomplete="off" required="">
                       
                           <label for="email" class="hidden">Email</label>
-                          <input class="contact-input" type="email" name="email" id="email" placeholder="email" required="">
+                          <input class="contact-input" type="email" name="email" id="toReply" placeholder="email" required="">
                       
                           <label for="message" autocomplete="off" class="hidden">Message</label>
                           <textarea class="contact-input contact-msg" name="message" id="message" placeholder="message" required=""></textarea>
@@ -152,6 +152,41 @@
             <p>Designed & coded with 💛 by Io</p>
         </footer>
 
-        <!-- <script src="IndexP.js"></script> -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("XkKDqNvIb2u8yiudQ");
+            })();
+
+            const serviceID = "service_portofolio";
+            const templateID = "template_portofolio";
+
+            function sendEmail(event) {
+                event.preventDefault();
+                
+                const form = event.target;
+                const fromName = form.elements.name.value;
+                const toReply = form.elements.email.value;
+                const message = form.elements.message.value;
+
+                const templateParams = {
+                    fromName: fromName,
+                    toReply: toReply, 
+                    message: message,
+                };
+
+                emailjs.send(serviceID, templateID, templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    form.reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+            }
+        </script>
+
+        <!-- <script src="index.js"></script> -->
     </body>
 </html>

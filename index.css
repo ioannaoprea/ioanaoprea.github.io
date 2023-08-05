@@ -382,7 +382,11 @@ footer {
     }
 }
 
-@media (min-width:440px) and (max-width: 660px) {
+@media (min-width:491) and (max-width: 671px) {
+    
+}
+
+@media (min-width:440px) and (max-width: 672px) {
     
     body {
         font-size: .7em;
@@ -487,7 +491,7 @@ footer {
 }
  
 
-@media (min-width:660px) and (max-width: 881px) {
+@media (min-width:670px) and (max-width: 881px) {
    body {
         font-size: .75em;
    }
@@ -510,7 +514,7 @@ footer {
    .shape {
         height: 270px;
         width: 180px;
-        top: 44%;
+        top: 51%;
         left: 3.3em;
    }
    .container-about-me {
@@ -562,7 +566,7 @@ footer {
    }
 }
 
-@media (min-width:881px) and (max-width: 1097px) {
+@media (min-width:881px) and (max-width: 1397px) {
     body {
         font-size: .9em;
     }
@@ -580,7 +584,7 @@ footer {
     .shape {
         height: 350px;
         width: 250px;
-        top: 40%;
+        top: 48%;
     }
     .container-about-me {
         padding: 0 2.8em;
