@@ -151,31 +151,38 @@ header {
 
 /* Skills */
 .skills {
-    padding: 3em 2.3em;
+    padding: 3.7em 3.3em;
 }
-.container-skills {
+.pm-skills, .dev-skills {
     display: flex;
     justify-content: space-between;
-    padding: 6em 7em 1em ;
-
+}
+.pm-skills {
+    padding: 6em 1em 2em;
+}
+.dev-skills {
+    padding: 4em 7em .7em;
+    font-size: 1rem;
 }
 .box-icon {
     display: flex;
-    flex-wrap: wrap;
-    padding: 1em;
     flex-direction: column;
     align-items: center;
+
 }
 .box-icon i,
 .box-icon img {
-    height: 47px;
-    width: 47px;
-    margin-bottom: .2em;
+    height: 39px;
+    width: 39px;
+    margin-bottom: 0;
     border-radius: 50%;
 }
 .box-icon img {
-    margin-bottom: 1.4em;
+    margin-bottom: 1.2em;
     margin-top: -1em;
+}
+.container-skills p {
+    font-size: 1.1rem;
 }
 
 /* Projects */
@@ -207,8 +214,12 @@ header {
     margin: 3em;
 }
 .project-img {
-    max-width: 100%;
+    width: 350px;
     height: auto;
+}
+.meme {
+    border: 1px solid blueviolet;
+    padding-bottom: 6px;
 }
 
 /* Contact */
