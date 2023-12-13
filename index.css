@@ -208,6 +208,21 @@ header {
     padding: .2em .6em;
     margin: 0;
 }
+.projectsp-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 3em;
+    line-height: 1.5em;
+     font-size: 1em;
+}
+.projectsp-description-divider {
+    width: 65%;
+}
+.projectsp-list {
+    display: flex;
+}
 .container-projects {
     display: flex;
     justify-content: space-between;
