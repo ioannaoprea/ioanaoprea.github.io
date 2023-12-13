@@ -190,8 +190,7 @@ header {
     padding: 4em 5.4em 3em;
 }
 
-.projects-description,
-.projectsp-description {
+.projects-description {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -199,8 +198,7 @@ header {
     margin: 0 auto 3em;
     line-height: 1.5em;
 }
-.projects-description-divider,
-.projectsp-description-divider {
+.projects-description-divider {
     width: 70%;
 }
 .projects-description-divider h3 {
@@ -209,23 +207,6 @@ header {
 .projects-description-divider a {
     padding: .2em .6em;
     margin: 0;
-}
-.projectsp-description {
-    font-size: 1em;
-}
-.projectsp-list ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.projectsp-list li {
-    margin-bottom: 1.5em;
-}
-
-.projectsp-list strong {
-    display: block;
-    margin-bottom: 0.5em;
-    font-weight: bold;
 }
 
 .container-projects {
